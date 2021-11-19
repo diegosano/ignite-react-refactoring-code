@@ -20,11 +20,9 @@ export default function Dashboard() {
       const response = await api.get('/foods');
       setFoods(response.data);
     })();
-  });
+  }, []);
 
   const handleAddFood = async (food) => {
-    const { foods } = this.state;
-
     try {
       const response = await api.post('/foods', {
         ...food,
