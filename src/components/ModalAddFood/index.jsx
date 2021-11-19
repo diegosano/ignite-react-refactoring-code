@@ -1,9 +1,10 @@
 import { createRef } from 'react';
+
+import Modal from '../Modal';
+import Input from '../Input';
 import { FiCheckSquare } from 'react-icons/fi';
 
 import { Form } from './styles';
-import Modal from '../Modal';
-import Input from '../Input';
 
 export default function ModalAddFood({ isOpen, setIsOpen, handleAddFood }) {
   const formRef = createRef();

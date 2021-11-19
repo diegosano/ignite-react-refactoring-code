@@ -10,26 +10,10 @@ import api from '../../services/api';
 import { FoodsContainer } from './styles';
 
 export default function Dashboard() {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     foods: [],
-  //     editingFood: {},
-  //     modalOpen: false,
-  //     editModalOpen: false,
-  //   }
-  //  }
-
   const [foods, setFoods] = useState([]);
   const [editingFood, setEditingFood] = useState({});
   const [modalOpen, setModalOpen] = useState(false);
   const [editModalOpen, setEditModalOpen] = useState(false);
-
-  // async componentDidMount() {
-  //   const response = await api.get('/foods');
-
-  //   this.setState({ foods: response.data });
-  // }
 
   useEffect(() => {
     (async () => {
