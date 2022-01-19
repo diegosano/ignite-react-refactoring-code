@@ -36,7 +36,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd ignite-react-shopping-cart
+  cd ignite-react-refactoring-code
 ```
 
 Install dependencies
